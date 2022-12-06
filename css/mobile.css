@@ -1,0 +1,25 @@
+/*This mobile css page make sure that the index page is responsive towards the mobile screen and (max-width:768px)*/
+
+#navbar h1{
+    float: none;
+    text-align: center;
+
+}
+
+#navbar ul,#navbar ul li {
+    float: none;
+}
+
+#navbar ul li a{
+    padding: 5px;
+    border bottom: #444 dotted 1px;
+
+}
+
+.row{
+    display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-columns: 300px;
+
+}

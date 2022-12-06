@@ -1,0 +1,373 @@
+/* reseting css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main styling*/
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2em;
+    background-color: grey;
+}
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px;
+
+}
+/* utilities class. this code for the upbar to go max width*/
+.container {
+    margin: auto;
+    max-width: 1500px;
+    overflow: auto;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background: #444;
+    padding: 14px 20px;
+    cursor: pointer;
+    padding-bottom: 20px;
+
+}
+.btn:hover{
+    background: tomato;
+    color: teal;
+}
+
+.h1-type1{
+    text-align: center;
+    border: 2px chocolate hidden;
+    padding: 10px;
+    margin: 10px;
+    background-color: chocolate;
+}
+
+
+/* for navbar design */
+#navbar{
+    background: chocolate;
+    color: black;
+    overflow: auto;
+}
+#navbar a{
+    color: white;
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{
+    float: left;
+     
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    background:crimson;
+    color: darkblue;
+}
+/*for showcase content in the index page*/
+#showcase{
+    background: url(../images/1.jpg) no-repeat center center/cover;
+    height: 100%;
+    padding-bottom: 500px;
+
+
+}
+.showcase-content {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+
+}
+.showchase-content h1 {
+    font-size: 80px;
+    line-height: 1.3em;
+}
+.showcase-content p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+#home-info{
+    height: 400 px;
+    
+}
+#home-info.info-image{
+    background: url(/images/2.jpg);
+
+    
+}
+/*our services in the index page the design for uit */
+.title{
+    border:10px grey solid;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    background: chocolate ;
+    color: white;
+}
+/* Create three equal columns using grid method*/
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: 300px;
+}
+.column{
+    background-color: chocolate;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+/* end of the index page and start of the jobs page*/
+/* jobs page css start from here here we will use float the first job and the aside contect left and right and do the coding*/
+.job-title{
+    font-family: 'Times New Roman', Times, serif;
+    font: italic 40px ;
+    color: red;
+}
+
+.job-1{
+    float: left;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    height: fit-content;
+    width: 70%;
+    background: wheat;
+    color: black;
+    
+    
+}
+.side-content{
+    border: 2px pink dotted;
+    border-radius: 10px;
+    padding: 20px;
+    float: right;
+    background: wheat;
+    color: black;
+    position: relative;
+    width: 25%;
+
+    
+    
+}
+.job-2{
+    clear:both;
+    border: 1px solid red;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    height: max-content;
+    width: 70%;
+    background: wheat;
+    color: black;
+   
+}
+
+/* end of the jobs page and start of the apply page*/
+#form-container{
+    background: coral;
+    
+    color: white;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 20px;
+
+}
+fieldset{
+    width: 500px;
+    margin: auto;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+ textarea {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.form-wrap{
+    border: 1px skyblue dotted;
+    background:#f5deb3;
+    color: black;
+}
+/* animated affect on the button of apply referenced from w3school*/
+.button {
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #aa9f04;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(78, 12, 12);
+  }
+  
+  .button:hover {background-color: #4f5a4f}
+  
+  .button:active {
+    background-color: #27a12b;
+    box-shadow: 0 5px rgb(37, 35, 35);
+    transform: translateY(4px);
+  }
+
+/*end of the apply area and start of the aboutme area*/
+
+dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    font-weight: bold;
+    color: green;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 80px;
+    padding: 0 0 0.5em 0;
+}
+
+.dt-1{
+    background: #f5deb3;
+    
+    height: 700px;
+    width: 70%;
+    float: left;
+}
+
+figure img{
+    float: right;
+    height:700px;
+    width: 30%;
+
+
+}
+.my-timetable{
+    clear: both;
+    border: 1px green solid;
+   padding: 10px;
+   background: #f5deb3;
+   width: 100%;
+
+
+}
+
+table td th{
+    border: 1px solid red;
+
+}
+
+.dt-1{
+    border: 2px red solid;
+    margin: auto;
+
+    
+
+}
+.enhancement{
+    border: 2px double chocolate;
+    background:#f5deb3;
+    height: 100%;
+
+}
+.enhancement h1  {
+    color: rgb(148, 238, 130);
+    background: rgb(119, 107, 105);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+.enhancement h2{
+    color: rgb(58, 49, 58);
+    background: rgb(150, 211, 206);
+    text-align: left;
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+  
+
+footer{
+    position:fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: brown;
+	color: white;
+	text-align: center;
+
+}
+
+.simple-btn{
+    border: 2px solid black;
+    background: red;
+    display: block;
+    width: fit-content;
+
+
+}
+
+.simple-btn:hover{
+    background: blueviolet;
+}
+
+.simple-btn:visited{
+    background: goldenrod;
+}
+
+    
+   
+
+
+
+
+
+
+

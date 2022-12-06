@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" contect="Welcome to Everst IT cousltant. View about our services and serach for job">
+    <link rel="stylesheet" href="css/style.css">
+     <title>Template Template Counsltant</title>
+</head>
+<Body>
+  <!-- navbar from the index page -->
+    <header>
+        <nav id="navbar">
+         <div class="container">
+            <h1 class="logo"><a href="index.html">Template Template consultant</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Careers</a></li>
+                <li><a href="apply.HTML">Apply</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="enhancement.html">Enhancement</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <!-- we Start the form from here where we will be using different attributes if form like  -->
+    <section >
+        <Div id="form-container">
+
+          <H1 class="form-headline">Apply with us</H1>
+          <p class="form-headline">please fill in the form to apply for the job</p>
+          <!--start of the form HTML  -->
+          <form class="form-wrap" action="process.php">
+            <!-- refrenece no -->
+            <label for="refno">Refno: </label><br>
+            <input type="number" id="refno" name="refno" maxlength="5" required><br>
+            <!--First name  -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"  required><br>
+            <!-- last name input -->
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <!--Birthdate   -->
+            <label for="birthdate">birthdate: </label><br>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+            <!-- using field set and legend for gender  -->
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="gender">gender:</label>
+                <input type="radio"  name="gender" value="Male" id="gender"> Male
+                <input type="radio"  name="gender" value="female" id="gender"> Female
+                <input type="radio"  name="gender" value="other" id="gender"> Other
+            </fieldset>
+            <!-- input for th address  -->
+            <label for="adr"> Address: </label><br>
+            <input type="text" id="adr" name="address" maxlength="40" required><br>
+            <!--for the city  -->
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city" maxlength="40" required><br>
+            <!--For the state  -->
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="New south wales">New south wales</option>
+              <option value="Victoria">Victoria</option>
+               <option value="South australia">South australia</option>
+               <option value="queensland">queensland</option>
+               <option value="Western Australia">Western australia</option>
+               <option value="Norther Territory">Northen Territory</option>
+               <option value="Tasmania">Tasmania</option>
+             </select><br>
+             <!-- for postcode  -->
+             <label for="postcode">Post code: </label><br>
+             <input type="number" id="postcode" name="postcode" minlenght='4' maxlength="4" pattern="[0-9]{4}" required><br>
+             <!-- for email  -->
+             <label for="email"> Email: </label><br>
+            <input type="email" id="email" name="email" placeholder="john@example.com"><br>
+            <!--for phone number  -->
+            <label for="phnum">Phone number</label>
+            <input type="number" id="phnum" name="phnum" placeholder="+61-0444444444" maxlength="12" required><br>
+            <!-- for checkbox skill select  -->
+            <label for="skills">I have following programming skills:</label><br>
+            <input type="checkbox" id="HTML&CSS" name="HTML&CSS" value="pskill" >
+            <label for="HTML&CSS"> HTML&CSS </label><br>
+            <input type="checkbox" id="JAVA" name="JAVA" value="pskill">
+            <label for="JAVA"> JAVA</label><br>
+            <input type="checkbox" id="Phython" name="Phython" value="pskill">
+            <label for="Python"> Python</label><br><br>
+            <label for="Otherskill">Other skill</label><br>
+            <!--For text area comment  -->
+            <textarea id="otherskill" name="otherskill" placeholder="Write something.." ></textarea><br>
+            <input type="submit" value="Submit" class="button">
+            <p class="bottom-text">
+                By clicking Submit button, you agree to our
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </form>
+        </div>
+        <!-- Footer section  -->
+        <footer>
+            <p>Copyright &copy; 2021 Template Template cousultant.</p>
+
+
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+</FORM>
+</Body>
+</html>
